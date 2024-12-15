@@ -1,0 +1,11 @@
+The solution addresses the issue by increasing the specificity of the selector to target only the paragraphs within the "container" div.
+
+```css
+div.container {
+  background-color: #f0f0f0;
+}
+div.container p {
+  color: blue;
+}
+```
+By using `div.container p`, we ensure that only paragraphs that are direct descendants of the element with the class "container" are affected.  This prevents the unintended styling of paragraphs elsewhere in the document.
