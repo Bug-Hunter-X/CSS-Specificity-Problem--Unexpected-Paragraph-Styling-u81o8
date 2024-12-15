@@ -1,0 +1,10 @@
+The following CSS code snippet demonstrates a common issue where a selector unintentionally affects elements beyond its intended scope due to a lack of specificity or incorrect use of selectors.  The goal is to style only the paragraphs within the "container" div, but due to the generic "p" selector, all paragraphs on the page are styled.
+
+```css
+div.container {
+  background-color: #f0f0f0;
+}
+p {
+  color: blue;
+}
+```
